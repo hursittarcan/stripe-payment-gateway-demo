@@ -12,8 +12,8 @@ const storeItems = new Map([
 app.use(express.json());
 app.use(express.static("public"));
 
-
-
-
+app.post('/create-checkout-session', (req, res) => {
+    res.json({ url: 'post-works'});
+});
 
 app.listen(3000);
